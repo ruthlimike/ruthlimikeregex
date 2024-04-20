@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        #usernameError, #emailError,#passwordError,#bcaError,#briError,#bniError,#simError,#ktpError,#pasporError{
+    font-size: 0.75rem;
+}
+
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <style>
+        .poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+        .abril {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body bgcolor="lightgray">
+
+    <h1 class="abril font-bold my-4 text-center text-5xl mt-12" style="color: #6c3c64;">Regex Form</h1>
+
+
+  <div class="max-w-md mx-auto" style="background-color: #ffffff;">
+        <form class="shadow-md rounded px-8 pt-6 pb-8 mb-4" id="myForm">
+
+            <div class="mb-3">
+                <label class="block text-gray-700 text-sm mb-2 poppins" for="Username" style="color: #36008d;">
+                    USERNAME
+                </label>
+                
+                
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="Username" type="text" placeholder="Username">
+                <span id="usernameError" class="left-0 bottom-0"></span>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm mb-2 poppins" for="email" style="color: #00c9b8;">
+                    EMAIL ADDRESS
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                <span id="emailError" class="left-0 bottom-0"></span>
+
+            </div>
+
+            <div class="mb-3">
+                <label class="block text-gray-700 text-sm mb-2 poppins" for="password" style="color: #fcd200;">
+                    PASSWORD
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password">              
+                <span id="passwordError" class="left-0 bottom-0"></span>
+
+            </div>
+
+           
+            <div class="mb-3">
+                <label class="block text-gray-700 text-sm mb-2 poppins " style="color: #ffb3c1;">NOMOR REKENING</label>
+                <div class="flex items-center" style="color: #b480ba;">
+                    <input type="radio" id="bca" name="bank" value="BCA" class="mr-2">
+                    <label for="bca" class="mr-4 poppins">BCA</label>
+                    
+                    <input type="radio" id="bri" name="bank" value="BRI" class="mr-2">
+                    <label for="bri" class="mr-4 poppins">BRI</label>
+                    
+                    <input type="radio" id="bni" name="bank" value="BNI" class="mr-2">
+                    <label for="bni" class="poppins">BNI</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="norek" type="number" placeholder="">
+                <span id="bcaError" class="left-0 bottom-0"></span>
+                <span id="briError" class="left-0 bottom-0"></span>
+                <span id="bniError" class="left-0 bottom-0"></span>
+
+
+            </div>
+
+
+            <div class="mb-3">
+                <label class="block text-gray-700 text-sm mb-2 poppins" style="color: #fe5e54;">NOMOR IDENTITAS UTAMA</label>
+                <div class="flex items-center"  style="color: #81ce68;">
+                    <input type="radio" id="sim" name="Identitas" value="SIM" class="mr-2">
+                    <label for="sim" class="mr-4 poppins">SIM</label>
+                    
+                    <input type="radio" id="ktp" name="Identitas" value="KTP" class="mr-2">
+                    <label for="ktp" class="mr-4 poppins">KTP</label>
+                    
+                    <input type="radio" id="paspor" name="Identitas" value="PASPOR" class="mr-2">
+                    <label for="paspor" class="poppins">PASPOR</label>
+                </div>
+            </div>
+            <div>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="nomor" type="number" placeholder="">
+                <span id="simError" class="left-0 bottom-0"></span>
+                <span id="ktpError" class="left-0 bottom-0"></span>
+                <span id="pasporError" class="left-0 bottom-0"></span>
+            </div>
+
+           
+           
+        </form>
+    </div>
+
+    
+   
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
